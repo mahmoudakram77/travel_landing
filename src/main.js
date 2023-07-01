@@ -1,5 +1,10 @@
-import { createApp } from 'vue'
-import App from './App.vue'
-import './registerServiceWorker'
-
-createApp(App).mount('#app')
+import { createApp } from "vue";
+import App from "./App.vue";
+import "./registerServiceWorker";
+import "bootstrap/dist/css/bootstrap.css";
+import "bootstrap/dist/js/bootstrap.js";
+import VueSplide from "@splidejs/vue-splide";
+import AOS from "aos";
+import "aos/dist/aos.css";
+AOS.init();
+createApp(App).use(VueSplide).mount("#app");

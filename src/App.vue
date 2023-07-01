@@ -1,26 +1,48 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <top-bar></top-bar>
+  <nav-bar></nav-bar>
+  <sec-two></sec-two>
+  <sec-three></sec-three>
+  <sec-four></sec-four>
+  <search-modal></search-modal>
+  <card-caruosel></card-caruosel>
+  <footer-sec></footer-sec>
+  <scroll-top></scroll-top>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import CardCaruosel from "./components/cardCaruosel.vue";
+import FooterSec from "./components/footerSec.vue";
+import NavBar from "./components/navBar.vue";
+import ScrollTop from "./components/ScrollTop.vue";
+import SearchModal from "./components/searchModal.vue";
+import SecFour from "./components/secFour.vue";
+import SecThree from "./components/secThree.vue";
+import SecTwo from "./components/secTwo.vue";
+import TopBar from "./components/topBar.vue";
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    TopBar,
+    NavBar,
+    FooterSec,
+    ScrollTop,
+    SecTwo,
+    SecThree,
+    SecFour,
+    SearchModal,
+    CardCaruosel,
+  },
+};
 </script>
 
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+body {
+}
+* {
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 </style>
